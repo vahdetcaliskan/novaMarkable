@@ -1,0 +1,15 @@
+const products = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        category: z.string(),
+        description: z.string(),
+        coverImage: z.string(),
+        price: z.number().optional(),
+        shopLinks: z.object({
+            etsy: z.string().url().optional(),
+            gumroad: z.string().url().optional(),
+            shopify: z.string().url().optional(),
+        }),
+        featured: z.boolean().default(false),
+    }),
+});
