@@ -1,16 +1,21 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>novaMarkable</title>
-	</head>
-	<body>
-		<h1>novaMarkable</h1>
-	</body>
-</html>
+<BaseLayout title="novaMarkable">
+	<h1 class="text-5xl font-bold tracking-tight">novaMarkable</h1>
+
+	<p class="mt-6 text-lg text-neutral-600 max-w-xl">
+		Templates and Planners for reMarkable Devices
+	</p>
+
+	<div class="mt-10">
+		<a
+			href="https://novamarkable.etsy.com"
+			target="_blank"
+			class="inline-block rounded-xl bg-black px-6 py-3 text-white text-sm font-medium hover:bg-neutral-800 transition"
+		>
+			Shop Now
+		</a>
+	</div>
+</BaseLayout>
